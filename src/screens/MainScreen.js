@@ -65,7 +65,7 @@ export default function MainScreen() {
     return (
         <KeyboardAvoidingView
             style={styles.container}
-            behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+            behavior={Platform.OS === 'android' ? 'padding' : 'height'}
         >
             <TouchableWithoutFeedback onPress={dismissKeyboard}>
                 <LinearGradient colors={['#141E30', '#243B55']} style={styles.background}>
